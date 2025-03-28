@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Request Form</title>
+        
+</head>
+<body>
+    <div class="form-container">
+        <h2>Repair Request Form</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="6c6a95fe-daca-4c58-bb5e-e81608a1ef47">
+            <label for="device">Device Type:</label>
+            <select name="device" required>
+                <option value="Smartphone">Smartphone</option>
+                <option value="Laptop">Laptop</option>
+                <option value="Tablet">Tablet</option>
+                <option value="Gaming Console">Gaming Console</option>
+                <option value="Smartwatch">Smartwatch</option>
+                <option value="Printer">Printer</option>
+            </select>
+            <input type="text" name="model" placeholder="Device Model (e.g., iPhone 12, Dell XPS 15)" required>
+            <textarea name="issue" placeholder="Describe the issue in detail" required></textarea>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+            <button type="submit">Submit Request</button>
+        </form>
+    </div>
+    <script src="T2.js"></script>
+</body>
+</html>

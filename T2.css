@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(bg.avif) no-repeat center center/cover;
+    text-align: center;
+}
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: scale(1.02);
+}
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #007BFF;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, select, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(39,179,195,1) 28%, rgba(22,94,144,1) 72%, rgba(16,0,255,1) 100%);background: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+button:hover {
+    background: #0056b3;
+}
