@@ -42,8 +42,13 @@ nav {
 .logo {
     font-size: 1.5em;
     font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 nav ul {
+    display: flex;
+    gap:10px;
     list-style: none;
     padding: 0;
     margin-right: 50px;
@@ -75,7 +80,7 @@ section h2{
 }
 .service-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 110px;
     justify-content: center;
     max-width: 750px;
@@ -144,6 +149,7 @@ section h2{
 }
 
 .text{
+    display:flex;
     color: #000000;
     margin:0 150px;
     margin-top: 40px;
@@ -181,4 +187,23 @@ footer {
     background: rgba(0, 123, 255, 0.9);
     color: white;
     margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    nav div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: row;
+    }
+    nav ul li {
+        margin: 10px 0;
+        font-size: small;
+    }
+    .service-container {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
 }
